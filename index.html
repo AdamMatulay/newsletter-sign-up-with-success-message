@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+
+  <title>Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <div class="newsletter-card">
+
+    <picture class="newsletter-illustration">
+      <source srcset="/images/illustration-sign-up-desktop.svg" alt="" media="(min-width: 48em)">
+      <source srcset="/images/illustration-sign-up-tablet.svg" alt="" media="(min-width: 26.5625em)">
+      <img src="/images/illustration-sign-up-mobile.svg" alt="">
+    </picture>
+
+    <div class="newsletter-content">
+
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li><img src="/images/icon-list.svg" alt="" />Product discovery and building what matters</li>
+        <li><img src="/images/icon-list.svg" alt="" />Measuring to ensure updates are a success</li>
+        <li><img src="/images/icon-list.svg" alt="" />And much more!</li>
+      </ul>
+
+      <form id="newsletter-email-form">
+        <label for="email">Email address</label>
+        <input id="email" name="email" placeholder="email@company.com" required>
+        <button id="submit-button" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+      
+
+    </div>
+
+
+  </div>
+
+  <div class="newsletter-confirmation hidden">
+    <img src="/images/icon-list.svg" alt="" />
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+    <button type="button">Dismiss message</button>
+  </div>
+
+</body>
+</html>
