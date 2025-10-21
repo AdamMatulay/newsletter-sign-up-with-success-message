@@ -14,21 +14,27 @@
 }
 
 body {
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+    
+}
+
+.newsletter-card-wrapper {
     display: flex;
     justify-content: center;
     min-height: 100dvh;
     background: var(--blue-700);
+    width: 100%;
 }
 
 .newsletter-card {
     background: var(--white);
-    min-height: 100%;
     display: flex;
+    min-height: 100%;
     flex-direction: column;
     gap: 2em;
     width: 100%;
+    opacity: 1;
 }
 
 .newsletter-illustration img{
@@ -146,7 +152,7 @@ body {
 
 @media only screen and (min-width: 48em) {
     
-    body {
+    .newsletter-card-wrapper {
         align-items: center;
     }
 
@@ -196,6 +202,6 @@ body {
 /* JS TOGGLE */
 
 .hidden {
-    display: none !important;]
+    display: none !important;
     opacity: 0;
 }
