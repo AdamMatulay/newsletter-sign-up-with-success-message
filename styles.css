@@ -48,7 +48,7 @@ body {
     color: var(--blue-800);
 }
 
-.newsletter-content p {
+.newsletter-content p, .newsletter-confirmation p {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--blue-800);
@@ -90,21 +90,21 @@ body {
     font-size: 1rem;
 }
 
-#submit-button {
-    margin: 1.5rem 0rem;    
+#submit-button, .newsletter-confirmation button {
+    margin: 1.5rem 0rem 0rem 0rem;
     background: var(--blue-800);
     color: var(--white);
     padding: 1rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 700;
     border-radius: 7px;
     cursor: pointer;
     border: none;
 }
 
-#submit-button:hover, #submit-button:active, #submit-button:focus  {
+#submit-button:hover, #submit-button:active, #submit-button:focus, .newsletter-confirmation button:hover, .newsletter-confirmation button:active, .newsletter-confirmation button:focus  {
     background: linear-gradient(to right,#f95371 27%, rgb(255, 111, 0));
-    
+    box-shadow: 0 10px 25px 0 rgba(164, 50, 21, 0.443);
 }
 
 .newsletter-confirmation {
@@ -116,6 +116,7 @@ body {
     justify-content: center;
     gap: 1.5em;
     padding: 1.35em;
+    opacity: 1;
 }
 
 .newsletter-confirmation img {
@@ -130,27 +131,8 @@ body {
     color: var(--blue-800);
 }
 
-.newsletter-confirmation p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--blue-800);
-}
-
 .newsletter-confirmation button {
-    margin: 1.5rem 0rem;
-    background: var(--blue-800);
-    color: var(--white);
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 7px;
-    cursor: pointer;
-    border: none;
     margin-top: auto;
-}
-
-.newsletter-confirmation button:hover, .newsletter-confirmation button:active, .newsletter-confirmation button:focus  {
-    background: linear-gradient(to right,#f95371 27%, rgb(255, 111, 0));
 }
 
 /* TABLET & DESKTOP */
@@ -173,31 +155,47 @@ body {
     }
 
     .newsletter-card {
-        max-width: 53.5em;
+        max-width: 58em;
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between  ;
         border-radius: 20px;
         padding: 1.25em;
-        gap: 0em;
+        gap: 1.25rem;
     }
 
     .newsletter-content {
         gap: 1em;
-        padding: 0em 4em 0em 2.5em;
+        padding: 0rem;
+        margin-inline: auto;
+        max-width: 42.5%;
     }
 
-    .newsletter-content h1{
+    .newsletter-content h1, .newsletter-confirmation h1{
         font-size: 3.5rem;
     }
 
     #newsletter-email-form label{
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
     }
+
+    .newsletter-confirmation {
+        max-width: 30em;
+        gap: 1.5em;
+        padding: 3.25em;
+        border-radius: 2em;
+    }
+
+    .newsletter-confirmation button {
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    }
+
 }
 
 /* JS TOGGLE */
 
 .hidden {
-    display: none !important;
+    display: none !important;]
+    opacity: 0;
 }

@@ -15,43 +15,43 @@
 
 </head>
 <body>
+  <section>
+    <div class="newsletter-card">
 
-  <div class="newsletter-card hidden">
+      <picture class="newsletter-illustration">
+        <source srcset="/images/illustration-sign-up-desktop.svg" media="(min-width: 48em)">
+        <source srcset="/images/illustration-sign-up-tablet.svg" media="(min-width: 26.5625em)">
+        <img src="/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
 
-    <picture class="newsletter-illustration">
-      <source srcset="/images/illustration-sign-up-desktop.svg" alt="" media="(min-width: 48em)">
-      <source srcset="/images/illustration-sign-up-tablet.svg" alt="" media="(min-width: 26.5625em)">
-      <img src="/images/illustration-sign-up-mobile.svg" alt="">
-    </picture>
+      <div class="newsletter-content">
 
-    <div class="newsletter-content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="/images/icon-list.svg" alt="" />Product discovery and building what matters</li>
+          <li><img src="/images/icon-list.svg" alt="" />Measuring to ensure updates are a success</li>
+          <li><img src="/images/icon-list.svg" alt="" />And much more!</li>
+        </ul>
 
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul>
-        <li><img src="/images/icon-list.svg" alt="" />Product discovery and building what matters</li>
-        <li><img src="/images/icon-list.svg" alt="" />Measuring to ensure updates are a success</li>
-        <li><img src="/images/icon-list.svg" alt="" />And much more!</li>
-      </ul>
+        <form id="newsletter-email-form">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="email@company.com" required>
+          <button id="submit-button" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+        
 
-      <form id="newsletter-email-form">
-        <label for="email">Email address</label>
-        <input id="email" name="email" placeholder="email@company.com" required>
-        <button id="submit-button" type="submit">Subscribe to monthly newsletter</button>
-      </form>
-      
+      </div>
+
 
     </div>
 
-
-  </div>
-
-  <div class="newsletter-confirmation">
-    <img src="/images/icon-list.svg" alt="" />
-    <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
-    <button type="button">Dismiss message</button>
-  </div>
-
+    <div class="newsletter-confirmation hidden" aria-live="polite">
+      <img src="/images/icon-success.svg" alt="" />
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+      <button type="button">Dismiss message</button>
+    </div>
+  </section>
 </body>
 </html>
