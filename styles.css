@@ -34,7 +34,6 @@ body {
     flex-direction: column;
     gap: 2em;
     width: 100%;
-    opacity: 1;
 }
 
 .newsletter-illustration img{
@@ -122,7 +121,6 @@ body {
     justify-content: center;
     gap: 1.5em;
     padding: 1.35em;
-    opacity: 1;
 }
 
 .newsletter-confirmation img {
@@ -203,5 +201,4 @@ body {
 
 .hidden {
     display: none !important;
-    opacity: 0;
 }

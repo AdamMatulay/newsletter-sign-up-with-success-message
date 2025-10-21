@@ -37,7 +37,7 @@
         <form id="newsletter-email-form">
           <label for="email">Email address</label>
           <input id="email" name="email" type="email" placeholder="email@company.com" required>
-          <button id="submit-button" type="submit">Subscribe to monthly newsletter</button>
+          <button on:click={submitToNewsletter} id="submit-button" type="submit">Subscribe to monthly newsletter</button>
         </form>
         
 
@@ -50,7 +50,7 @@
       <img src="/images/icon-success.svg" alt="" />
       <h1>Thanks for subscribing!</h1>
       <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
-      <button type="button">Dismiss message</button>
+      <button id="dismiss-button" type="button">Dismiss message</button>
     </div>
   </section>
 </body>
