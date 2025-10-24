@@ -223,6 +223,11 @@ body {
 
 }
 
+.egg {
+    max-width: 20em;
+    position: absolute;
+}
+
 /* JS TOGGLE */
 
 .hidden {
